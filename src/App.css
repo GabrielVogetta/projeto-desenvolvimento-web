@@ -1,0 +1,22 @@
+body{
+  margin: 10px;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+input{
+  width: 200px;
+}
+
+button{
+  width: 100px;
+}
+
+.Register{
+  display: flex;
+  flex-direction: column;
+}
