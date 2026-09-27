@@ -23,7 +23,6 @@ export async function firebaseRegister({email, password, name, lastName, birth})
 
     await setDoc(doc(db, "users", res.user.uid), {
       email,
-      password,
       name,
       lastName,
       birth

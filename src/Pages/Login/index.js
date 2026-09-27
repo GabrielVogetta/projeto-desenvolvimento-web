@@ -25,17 +25,20 @@ function Login() {
   }
 
   return (
-    <form onSubmit={signIn} className="Login">
-      <h1>Login</h1>
-      <label>Email:
-        <input type='email' required value={email} onChange={e => setEmail(e.target.value)}/>
-      </label>
-      <label>Senha:
-        <input required value={password} onChange={e => setPassword(e.target.value)}/>
-      </label>
-      <button type="submit">Acessar</button>
-      <label>{message}</label>
-    </form>
+    <div>
+      <form onSubmit={signIn} className="Login">
+        <h1>Login</h1>
+        <label>Email:
+          <input type='email' required value={email} onChange={e => setEmail(e.target.value)}/>
+        </label>
+        <label>Senha:
+          <input required value={password} onChange={e => setPassword(e.target.value)}/>
+        </label>
+        <button type="submit">Acessar</button>
+        <label>{message}</label>
+      </form>
+      <button onClick={() => {navigate("/register")}}>Ainda não tem cadastro?</button>
+    </div>
   );
 }
 

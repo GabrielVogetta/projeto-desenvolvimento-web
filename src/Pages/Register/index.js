@@ -7,11 +7,11 @@ function Register() {
 
   const navigate = useNavigate();
 
-  const [email, setEmail] = useState("vogetta2002@gmail.com");
-  const [password, setPassword] = useState("123456");
-  const [name, setName] = useState("Gabriel");
-  const [lastName, setLastName] = useState("Vogetta");
-  const [birth, setBirth] = useState("2002-12-20");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [name, setName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [birth, setBirth] = useState("");
   const [message, setMessage] = useState("");
 
   const register = (event) => {
@@ -35,26 +35,29 @@ function Register() {
   }
 
   return (
-    <form onSubmit={register} className="Register">
-      <h1>Cadastro</h1>
-      <label>Email:
-        <input type='email' required value={email} onChange={e => setEmail(e.target.value)}/>
-      </label>
-      <label>Senha:
-        <input required value={password} onChange={e => setPassword(e.target.value)}/>
-      </label>
-      <label>Nome:
-        <input required value={name} onChange={e => setName(e.target.value)}/>
-      </label>
-      <label>Sobrenome:
-        <input required value={lastName} onChange={e => setLastName(e.target.value)}/>
-      </label>
-      <label>Data de Nascimento:
-        <input type='date' required value={birth} onChange={e => setBirth(e.target.value)}/>
-      </label>
-      <button type="submit">Cadastrar</button>
-      <label>{message}</label>
-    </form>
+    <div>
+      <form onSubmit={register} className="Register">
+        <h1>Cadastro</h1>
+        <label>Email:
+          <input type='email' required value={email} onChange={e => setEmail(e.target.value)}/>
+        </label>
+        <label>Senha:
+          <input required value={password} onChange={e => setPassword(e.target.value)}/>
+        </label>
+        <label>Nome:
+          <input required value={name} onChange={e => setName(e.target.value)}/>
+        </label>
+        <label>Sobrenome:
+          <input required value={lastName} onChange={e => setLastName(e.target.value)}/>
+        </label>
+        <label>Data de Nascimento:
+          <input type='date' required value={birth} onChange={e => setBirth(e.target.value)}/>
+        </label>
+        <button type="submit">Cadastrar</button>
+        <label>{message}</label>
+      </form>
+      <button onClick={() => {navigate("/login")}}>Já tem cadastro?</button>
+    </div>
   );
 }
 

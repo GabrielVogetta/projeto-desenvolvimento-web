@@ -16,7 +16,7 @@ button{
   width: 100px;
 }
 
-.Register{
+form{
   display: flex;
   flex-direction: column;
 }
