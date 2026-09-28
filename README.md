@@ -3,8 +3,9 @@
 ## Sobre o projeto
 
 O objetivo é desenvolver um sistema web de login utilizando firebase.
-Para o projeto, contei com as versões atuais do react-router e firebase, utilizando suas documentações oficiais.
+Para o projeto, contei com as versões atuais do react-router e firebase, com o objetivo de práticar o uso de documentações oficiais.
 Também contei com conhecimento prévio em HTML, CSS, React e seus principais hooks, useState e useEffect. 
+Deploy foi realizado na vercel.
 
 ## Bibliotecas
 - react-router
