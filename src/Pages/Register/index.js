@@ -35,28 +35,29 @@ function Register() {
   }
 
   return (
-    <div>
-      <form onSubmit={register} className="Register">
+    <div className='container'>
+      <form onSubmit={register}>
         <h1>Cadastro</h1>
-        <label>Email:
+        <label>Email
           <input type='email' required value={email} onChange={e => setEmail(e.target.value)}/>
         </label>
-        <label>Senha:
+        <label>Senha
           <input required value={password} onChange={e => setPassword(e.target.value)}/>
         </label>
-        <label>Nome:
+        <label>Nome
           <input required value={name} onChange={e => setName(e.target.value)}/>
         </label>
-        <label>Sobrenome:
+        <label>Sobrenome
           <input required value={lastName} onChange={e => setLastName(e.target.value)}/>
         </label>
-        <label>Data de Nascimento:
+        <label>Data de Nascimento
           <input type='date' required value={birth} onChange={e => setBirth(e.target.value)}/>
         </label>
         <button type="submit">Cadastrar</button>
-        <label>{message}</label>
+        <label className='error-message'>{message}</label>
       </form>
-      <button onClick={() => {navigate("/login")}}>Já tem cadastro?</button>
+      <label>Você já tem cadastro?</label>
+      <button onClick={() => {navigate("/login")}}>Faça seu login</button>
     </div>
   );
 }

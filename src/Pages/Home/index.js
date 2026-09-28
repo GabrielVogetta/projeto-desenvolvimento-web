@@ -33,9 +33,11 @@ function Home() {
   }
 
   return (
-    <div>
-      <h1>Home</h1>
-      <button onClick={exit}>Sair</button>
+    <div className='container'>
+      <div className='container-header'>
+        <h1>Home</h1>
+        <button className='exit-button' onClick={exit}>Sair</button>
+      </div>
       <h2>Seus dados</h2>
       <p>Email: {email}</p>
       <p>Primeiro nome: {name}</p>
