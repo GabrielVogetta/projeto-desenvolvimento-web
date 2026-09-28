@@ -1,12 +1,18 @@
 # Projeto desenvolvimento web
 
-## Objetivo do projeto
+## Sobre o projeto
 
-Desenvolver um sistema de login utilizando firebase
+O objetivo é desenvolver um sistema web de login utilizando firebase.
+Para o projeto, contei com as versões atuais do react-router e firebase, utilizando suas documentações oficiais.
+Também contei com conhecimento prévio em HTML, CSS, React e seus principais hooks, useState e useEffect. 
 
 ## Bibliotecas
 - react-router
 - firebase
+
+## Como rodar localmente
+`npm install`
+`npm start`
 
 ## Referências
 
@@ -24,5 +30,5 @@ Desenvolver um sistema de login utilizando firebase
 [Repo Firebase / Snippets-web](https://github.com/firebase/snippets-web)
 
 #### Demais documentações
-[MDN | localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
+[MDN | localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)\
 [React useEffect](https://react.dev/reference/react/useEffect)
